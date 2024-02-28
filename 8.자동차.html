@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동차</title>
+    <style>
+
+        *{margin:0 auto;}
+
+        .wrap{
+            width:1920px;
+            height:1080px;
+            overflow: hidden;
+            background: url(./images/bg.jpg) no-repeat;}
+
+        .lc1{
+            width:192px; 
+            height:113px;
+            background: url(./images/left_car1.png);
+            position:relative;
+            top:760px;
+            right:-1100px;
+            animation-name: lc1;
+            animation-duration:7s; 
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite; 
+            animation-direction: normal;
+            animation-delay: 0.5s;}
+
+        @keyframes lc1{
+            from{right:-1100px;}
+            to{right:1400px;}}
+
+        .lc2{
+            width:192px; 
+            height:130px;
+            background: url(./images/left_car2.png);
+            position:relative;
+            top:620px;
+            right:-1080px;
+            animation-name: lc2, opa-left; 
+            animation-duration:7s; 
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite; 
+            animation-direction: normal;
+            animation-delay: 2s;}
+
+        @keyframes lc2{
+            from{right:-1080px;}
+            to{right:1400px;}}
+
+        .lc3{
+            width:192px; 
+            height:160px;
+            background: url(./images/left_car3.png);
+            position:relative;
+            top:460px;
+            right:-1080px;
+            animation-name: lc3, opa-left; 
+            animation-duration:7s; 
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite; 
+            animation-direction: normal;
+            animation-delay: 4s;}
+
+        @keyframes lc3{
+            from{right:-1080px;}
+            to{right:1400px;}}
+
+        .rc1{
+            width:192px; 
+            height:140px;
+            background: url(./images/right_car1.png) no-repeat;
+            position:relative;
+            top:350px;
+            left:-1100px;
+            animation-name: rc1;
+            animation-duration:7s; 
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite; 
+            animation-direction: normal;
+            animation-delay: 1s;}
+
+        @keyframes rc1{
+            from{left:-1100px;}
+            to{left:1400px;}}
+
+        .rc2{
+            width:192px; 
+            height:140px;
+            background: url(./images/right_car2.png) no-repeat;
+            position:relative;
+            top:230px;
+            left:-1100px;
+            animation-name: rc2;
+            animation-duration:7s; 
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite; 
+            animation-direction: normal;
+            animation-delay: 3s;}
+
+        @keyframes rc2{
+            from{left:-1100px;}
+            to{left:1400px;}}
+
+        .rc3{
+            width:192px; 
+            height:140px;
+            background: url(./images/right_car3.png) no-repeat;
+            position:relative;
+            top:95px;
+            left:-1100px;
+            animation-name: rc3;
+            animation-duration:7s; 
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite; 
+            animation-direction: normal;
+            animation-delay: 5s;}
+
+        @keyframes rc3{
+            from{left:-1100px;}
+            to{left:1400px;}}
+
+        
+
+/*animation: my 3s linear 1s infinite alternate*/
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <div class="lc1"></div>
+    <div class="lc2"></div>
+    <div class="lc3"></div>
+    <div class="rc1"></div>
+    <div class="rc2"></div>
+    <div class="rc3"></div>
+    </div>
+</body>
+</html>

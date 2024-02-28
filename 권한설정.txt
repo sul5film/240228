@@ -1,0 +1,14 @@
+· 권한 설정하기
+참고 링크: https://dog-developers.tistory.com/183
+
+1. windows powershell 우클릭해 관리자 권한으로 실행
+2. Get-ExecutionPolicy 명령어 입력
+>> RemoteSigned 인 경우, 변경 필요 없음
+>> Restricted 인 경우, 아래 순서 진행
+3. Set-ExecutionPolicy RemoteSigned 명령어 입력
+4. Y 입력
+5. Get-ExecutionPolicy 명령어 입력해 상태 확인 후 종료.
+
+
+
+
